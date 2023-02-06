@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Acadcalendar - Registration Form</title>
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="../assets/css/web_style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <!-- .navbar -->
+        <a href="../index.html" class="logo d-flex align-items-center">
+            <img src="../assets/img/logo.png" alt="">
+            <span>Acadcalendar</span>
+        </a>
+        <nav id="navbar" class="navbar">
+            <ul>
+            <li><a class="nav-link scrollto active" href="../index.html#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="../index.html#about">About</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <section class="d-flex" style="background-image: url('../assets/img/hero-bg.png'); height: 100vh;">
+            <div class="container py-1 h-75 login overflow-auto" data-aos="fade-up">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-lg-7 col-xl-5">
+                    <div class="card rounded-2">
+                        <div class="card-body p-3 p-md-4">
+                        <!-- Title -->
+                        <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Form</h3>
+                        
+                        <!-- Form -->
+                        <!-- PHP link -->
+                        <form class="px-md-2" action="register.php" method="post" autocomplete="off">
+                             <!-- First name -->
+                            <div class="form-outline mb-3"  style="width:50%;float:left">
+                            <input type="text" class="form-control" name="firstname" placeholder="First Name" id="firstname" required />
+                            <i class="fas fa-user"></i>
+                            <label class="form-label" for="Firstname">First Name</label>
+                            </div>
+
+                             <!-- Last name -->
+                            <div class="form-outline mb-3" style="width:50%;float:left;padding-left: 5px;">
+                            <input type="text" class="form-control" name="lastname" placeholder="Last Name" id="lastname" required />
+                            <i class="fas fa-user"></i>
+                            <label class="form-label" for="Lastname">Last Name</label>
+                            </div>
+
+                            <!-- Username -->
+                            <div class="form-outline mb-3">
+                            <input type="text" class="form-control" name="username" placeholder="Username" id="username" required />
+                            <i class="fas fa-id-card"></i>
+                            <label class="form-label" for="Username">Username</label>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="form-outline mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="Email" id="email" />
+                            <i class="fas fa-envelope"></i>
+                            <label class="form-label" for="Email">Email</label>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="form-outline mb-3">
+                            <input type="phone" class="form-control" name="phone" placeholder="Phone Number (63)" id="phone" />
+                            <i class="fas fa-phone"></i>
+                            <label class="form-label" for="Phone">Phone Number</label>
+                            </div>
+                            
+                            <!-- Password -->
+                            <div class="form-outline mb-3">
+                            <input type="password" class="form-control" name="password" placeholder="Password" id="password" required/>
+                            <i class="fas fa-lock"></i>
+                            <label class="form-label" for="Password">Password</label>
+                            </div>
+                            
+                            <!-- Course -->
+                            <div class="form-outline mb-3">
+                            <input type="text" class="form-control" name="course" placeholder="1-BSIT / 2-BSHM / 3-BSBA / 4-BSTM / 5-Staff" id="course" required/>
+                            <i class="fas fa-school"></i>
+                            <label class="form-label" for="course">Course Code</label>
+                            </div>
+    
+                            <!-- Year -->
+                            <div class="form-outline mb-3">
+                            <input type="text" class="form-control" name="year" placeholder="1-1st / 2-2nd / 3-3rd / 4-4th / 5-Staff" id="year" required/>
+                            <i class="fas fa-graduation-cap"></i>
+                            <label class="form-label" for="Year">Year Level Code</label>
+                            </div>
+                                
+                            <!-- Button -->
+                            <button type="submit" class="btn btn-success btn-lg mb-1" style="background-color: #0000FF;">Submit</button>
+                                <!-- Other Stuff -->
+                                <hr>
+                                <p style="text-align:center;">Already have an account? <a href="login.html">Sign in</a>.</p>
+                        </form>
+                            <!-- end of form -->
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+</body>
+
+ <!-- Vendor JS Files -->
+ <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+ <script src="../assets/vendor/aos/aos.js"></script>
+ <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+ <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Main JS File -->
+ <script src="../assets/js/web_main.js"></script>
+</html>
